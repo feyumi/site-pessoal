@@ -2,36 +2,125 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="cf.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <link rel="stylesheet" href="index_cf.css">
         <title>Site pessoal</title>
     </head>
     <body>
-        <div class="main">
-            <div class="box">
-                <div class="upperbox">
-                    <ul class="menu">
-                        <li><a href="#" class="op">Início</a></li>
-                        <li><a href="#" class="op">Sobre mim</a></li>
-                        <li><a href="#" class="op">Projetos</a></li>
-                        <li><a href="#" class="op">Contato</a></li>
-                    </ul>
+        <header class="menu-container">
+    <nav>
+        <ul class="menu">
+            <li><a href="#" class="op">Início</a></li>
+            <li><a href="#sobre" class="op">Sobre mim</a></li>
+            <li><a href="#projetos" class="op">Projetos</a></li>
+            <li><a href="#contato" class="op">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="introbox">
+            <img class="imgcf" src="imgs/foto_site.jpg" alt="Minha foto">
+            <div>
+                <h1 class="maintitle">Fernanda Yumi Assonuma</h1>
+                <p class="text">Aluna de Bacharelado em Ciência da Computação no Instituto de Matemática e Estatística da Universidade de São Paulo, curso cujo ingresso ocorreu em 2025</p>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre-section">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="sobre-cards-container">
+                <div class="sobre-card">
+                    <h3 class="subtitle">Formação técnica</h3>
+                    <p class="text">Pela Escola Técnica de São Paulo, instituição do Centro Paula Souza, concluí em 2023, o Ensino Médio Integrado ao Técnico no curso de Desenvolvimento de Sistemas</p>
                 </div>
-                <div class="middlebox">
-                    <div class="innermiddle">
-                        <p class="maintitle">Fernanda Yumi Assonuma</p>
-                        <div class = "introbox">
-                            <div style="width: fit-content;">
-                                <img class = "imgcf" src="imgs/foto_site.jpg"  >
-                            </div>
-                            <div style="width: 60%; margin-left: 20px;">
-                                <p class="text">Aluna de Bacharelado em Ciência da Computação no Instituto de Matemática e Estatística da Universidade de São Paulo, curso cujo ingresso ocorreu em 2025</p>
-                            </div> 
-                        </div> 
-                    </div> 
+                <div class="sobre-card">
+                    <h3 class="subtitle">Ensino Superior</h3>
+                    <p class="text">Atualmente aluna do IME-USP no Bacharelado em Ciência da Computação, pretendo seguir a trilha de Teoria da Computação.</p>
                 </div>
-            </div>            
+                <div class="sobre-card">
+                    <h3 class="subtitle">Outras Atividades</h3>
+                    <p class="text">Participo do grupo iCEM (Iniciação Cienífica para Estudantes Medalhistas) do IME-USP e atualmente sou monitora do Curso de Inverno do grupo de extensão CodificADAs, que visa a estimular a participação de mulheres nas áreas de exatas e computação.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section-projetos">
+            <h2 class="section-title">Projetos em Andamento</h2>
+            
+            <div class="projetos-container">
+                <div class="projeto-item">
+                    <div class="projeto-info">
+                        <h3 class="subtitle">Iniciação Científica (IME-USP)</h3>
+                        <p class="text">"Estimação de distribuição quase-estacionária via algoritmo EM em sistemas estocásticos de neurônios interagentes". Visa simular computacionalmente o comportamento de um sistema de neurônios em passos discretos usando cadeias de Markov</p>
+                    </div>
+                </div>
+
+                <div class="projeto-item">
+                    <div class="projeto-info">
+                        <h3 class="subtitle">NETMOD Data Challenge</h3>
+                        <p class="text">Desafio para trabalho com limpeza e análise de dados da cidade de Niterói.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-contato">
+            <h2 class="subtitle">Formas de contato</h2>
+            <p class="text">Aqui estão algumas formas de entrar em contato ou de acompanhar futuros trabalhos e projetos.</p>
+
+            <div class="contato-links">
+                <a href="https://www.linkedin.com/in/fernanda-assonuma-a41063276/" target="_blank" class="link-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="text">LinkedIn</span>
+                </a>
+                
+                <a href="https://github.com/feyumi" target="_blank" class="link-item">
+                    <i class="fab fa-github"></i>
+                    <span class="text">GitHub</span>
+                </a>
+                
+                <a href="http://lattes.cnpq.br/3467081048772274" target="_blank" class="link-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="text">Lattes</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-        
-        <p></p>
+
+        <hr class="footer-divider">
+
+        <div class="footer-bottom">
+            <p class="text">© 2026 Fernanda Yumi Assonuma</p>
+            <div class="social-icons">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/fernanda-assonuma-a41063276/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://github.com/feyumi" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                
+                    <a href="http://lattes.cnpq.br/3467081048772274" target="_blank" class="lattes-link">Lattes</a>
+            </div>
+        </div>
+    </footer>
+
     </body>
-</html>
+</html>  
